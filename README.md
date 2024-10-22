@@ -7,7 +7,7 @@ JCG Q30 PRO极简AP固件。
 
 
 237大佬源码网址:
-[https://github.com/hanwckf/immortalwrt-mt798x](https://github.com/padavanonly/immortalwrt-mt798x-23.05)
+[https://github.com/padavanonly/immortalwrt-mt798x-23.05](https://github.com/padavanonly/immortalwrt-mt798x-23.05)
 
 使用p3terx云编译模板
 **English** | [中文](https://p3terx.com/archives/build-openwrt-with-github-actions.html)
