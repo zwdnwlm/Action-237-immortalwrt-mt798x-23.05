@@ -23,4 +23,4 @@ sed -i 's/ImmortalWrt/ImmortalWrt-Hanwckf/g' package/base-files/files/bin/config
 sed -i 's/IMG_PREFIX:=/IMG_PREFIX:=$(shell date +"%Y%m%d")-/1' include/image.mk
 
 # Modify ppp-down, add sleep 3. my source code is change, no need this
-#sed -i '$a\\\nsleep 3' package/network/services/ppp/files/lib/netifd/ppp-down
+sed -i '$a\\sleep 3' package/network/services/ppp/files/lib/netifd/ppp-down
