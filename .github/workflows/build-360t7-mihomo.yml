@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: Build 360T7 Latest Passwall+Xray
+name: Build 360T7 +mihomo
 
 on:
   repository_dispatch:
