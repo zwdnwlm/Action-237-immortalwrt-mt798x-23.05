@@ -80,7 +80,7 @@ jobs:
         rm -rf feeds/packages/net/sing-box/
         rm -rf feeds/packages/net/hysteria/
         rm -rf feeds/packages/net/shadowsocksr-libev/
-        git clone -b main --single-branch https://github.com/morytyann/OpenWrt-mihomo.git package
+        git clone -b main --single-branch https://github.com/morytyann/OpenWrt-mihomo.git package/mihomo
          
     - name: Load custom configuration
       run: |
