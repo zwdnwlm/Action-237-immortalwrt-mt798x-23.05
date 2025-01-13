@@ -22,7 +22,7 @@ env:
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: jcg-q30pro-pw+xray.config
   DIY_P1_SH: diy-part1.sh
-  DIY_P2_SH: diy-part2-6-1.sh
+  DIY_P2_SH: diy-part2-6-1-pw.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_RELEASE: true
@@ -82,6 +82,8 @@ jobs:
         rm -rf feeds/packages/net/xray-plugin/
         rm -rf feeds/packages/net/chinadns-ng/
         rm -rf feeds/packages/net/sing-box/
+        rm -rf feeds/packages/net/hysteria/
+        rm -rf feeds/packages/net/shadowsocksr-libev/
         git clone https://github.com/xiaorouji/openwrt-passwall package/luci-app-passwall
         git clone https://github.com/xiaorouji/openwrt-passwall-packages package/luci-app-passwall-packages
          
@@ -150,7 +152,7 @@ jobs:
         echo "status=success" >> $GITHUB_OUTPUT
 
     - name: Upload firmware to release
-      uses: softprops/action-gh-release@master
+      uses: softprops/action-gh-release@v2
       if: steps.tag.outputs.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
